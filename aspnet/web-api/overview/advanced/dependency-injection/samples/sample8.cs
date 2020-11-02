@@ -1,4 +1,4 @@
-using Microsoft.Practices.Unity;
+using Unity;
 using System;
 using System.Collections.Generic;
 using System.Web.Http.Dependencies;
@@ -26,7 +26,7 @@ public class UnityResolver : IDependencyResolver
         {
             throw new InvalidOperationException(
                 $"Unable to resolve service for type {serviceType}.",
-                exception)
+                exception);
         }
     }
 
@@ -40,7 +40,7 @@ public class UnityResolver : IDependencyResolver
         {
             throw new InvalidOperationException(
                 $"Unable to resolve service for type {serviceType}.",
-                exception)
+                exception);
         }
     }
 
